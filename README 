@@ -1,0 +1,132 @@
+📘 README – TP 222 : API REST Blog avec CLEEROUTE
+📌 Présentation
+Ce projet est une API REST développée avec Node.js et Express, permettant de gérer un blog (création, lecture, modification et suppression d’articles).
+L’API intègre :
+une base de données SQLite
+une documentation avec Swagger
+un système de sécurité inspiré de CLEEROUTE via des middlewares
+🎯 Objectifs du TP
+Concevoir une API REST complète
+Implémenter les opérations CRUD
+Documenter une API avec Swagger
+Mettre en place un système de sécurité (CLEEROUTE)
+Manipuler une base de données SQLite
+🛠️ Technologies utilisées
+Node.js
+Express.js
+SQLite3
+Swagger (swagger-ui-express & swagger-jsdoc)
+JavaScript
+📂 Structure du projet
+Bash
+Copy code
+project/
+├── server.js        # Fichier principal (API)
+├── cleeroute.js     # Middleware de sécurité (CLEEROUTE)
+├── blog.db          # Base de données SQLite
+├── package.json
+└── README.md
+⚙️ Installation
+Cloner le projet :
+Bash
+Copy code
+git clone <url_du_projet>
+cd project
+Installer les dépendances :
+Bash
+Copy code
+npm install
+Lancer le serveur :
+Bash
+Copy code
+node server.js
+ Lancement de l’API
+Une fois lancée, l’API est disponible sur :
+Copy code
+
+http://localhost:3000
+Documentation Swagger
+La documentation interactive est accessible via :
+Copy code
+
+http://localhost:3000/api-docs
+Elle permet de tester facilement toutes les routes.
+ Implémentation de CLEEROUTE
+Un module cleeroute.js a été créé pour simuler le fonctionnement de CLEEROUTE à l’aide de middlewares.
+ Fonctionnalités :
+Authentification via un header Authorization
+Attribution de rôles :
+user
+admin
+Protection des routes sensibles
+ Exemple :
+Création d’article → nécessite authentification
+Suppression → nécessite rôle admin
+ Utilisation des Headers
+Pour accéder aux routes protégées :
+Utilisateur simple : il faut copier le code user et pour l'administrateur admin 
+
+ Endpoints de l’API
+Articles
+Méthode
+Route
+Description
+Sécurité
+GET
+/api/articles
+Liste des articles
+Public
+GET
+/api/articles/:id
+Détail d’un article
+Public
+POST
+/api/articles
+Créer un article
+Auth requis
+PUT
+/api/articles/:id
+Modifier un article
+Auth requis
+DELETE
+/api/articles/:id
+Supprimer un article
+Admin
+🗄️ Base de données
+Table : articles
+Champ
+Type
+id
+INTEGER (PK)
+titre
+TEXT
+contenu
+TEXT
+auteur
+TEXT
+categorie
+TEXT
+date
+TEXT
+ Choix techniques
+J'ai défini les routes  directement dans server.js pour simplifier l’architecture de mon TP.
+SQLite a été choisi pour sa simplicité d’utilisation.
+Swagger permet une documentation claire et interactive.
+CLEEROUTE est simulé via des middlewares pour illustrer la gestion des accès.
+  Tests
+Les tests peuvent être effectués via :
+Swagger UI
+Postman
+  Mais moi j'ai utilisé Swagger UI je l'ai trouvé plus simple surtout que l'interface est plus accessible avec une documentation claire et accessible 
+
+AMÉLIORATION POSSIBLES
+Des améliorations peuvent être faites sur cette API : 
+
+1- On pourrait authentifier réellement l'API avec JWT
+2- On peut ajouterla gestion des utilisateurs c'est à les inviter à s'inscrire ou à se connecter 
+3- On pourra aussi séparer routes en modules, ajouter la validation des données via un fichier validate et le déploiement de l'API.
+
+AUTEUR 
+Nom : ANGE MERVEILLES ABATSONG 
+Cours : INF222
+TP : API REST avec CLEEROUTE
