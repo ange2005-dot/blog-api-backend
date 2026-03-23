@@ -1,23 +1,23 @@
-📘 README – TP 222 : API REST Blog avec CLEEROUTE
-📌 Présentation
+ TP 222 : API REST Blog avec CLEEROUTE
+ Présentation
 Ce projet est une API REST développée avec Node.js et Express, permettant de gérer un blog (création, lecture, modification et suppression d’articles).
 L’API intègre :
 une base de données SQLite
 une documentation avec Swagger
 un système de sécurité inspiré de CLEEROUTE via des middlewares
-🎯 Objectifs du TP
+ Objectifs du TP: l'objectif du TP est de
 Concevoir une API REST complète
 Implémenter les opérations CRUD
 Documenter une API avec Swagger
 Mettre en place un système de sécurité (CLEEROUTE)
 Manipuler une base de données SQLite
-🛠️ Technologies utilisées
+ Technologies utilisées
 Node.js
 Express.js
 SQLite3
 Swagger (swagger-ui-express & swagger-jsdoc)
 JavaScript
-📂 Structure du projet
+ Structure du projet
 Bash
 Copy code
 project/
@@ -26,7 +26,7 @@ project/
 ├── blog.db          # Base de données SQLite
 ├── package.json
 └── README.md
-⚙️ Installation
+ Installation
 Cloner le projet :
 Bash
 Copy code
