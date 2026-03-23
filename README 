@@ -30,7 +30,7 @@ project/
 Cloner le projet :
 Bash
 Copy code
-git clone <url_du_projet>
+git clone <https://github.com/ange2005-dot/blog-api-backend>
 cd project
 Installer les dépendances :
 Bash
