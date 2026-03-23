@@ -2,6 +2,7 @@ const express = require("express");
 const sqlite3 = require("sqlite3").verbose();
 const swaggerUI = require("swagger-ui-express");
 const swaggerJsdoc = require("swagger-jsdoc");
+const { checkAuth, checkRole } = require('./cleeroute');
 
 const app = express();
 app.use(express.json());
