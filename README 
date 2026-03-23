@@ -29,12 +29,10 @@ project/
  Installation
 Cloner le projet :
 Bash
-Copy code
 git clone <https://github.com/ange2005-dot/blog-api-backend>
 cd project
 Installer les dépendances :
 Bash
-Copy code
 npm install
 Lancer le serveur :
 Bash
@@ -42,7 +40,6 @@ Copy code
 node server.js
  Lancement de l’API
 Une fois lancée, l’API est disponible sur :
-Copy code
 
 http://localhost:3000
 Documentation Swagger
@@ -66,96 +63,7 @@ Suppression → nécessite rôle admin
 Pour accéder aux routes protégées :
 Utilisateur simple : il faut copier le code user et pour l'administrateur admin 
 
- Endpoints de l’API
-
-blog-api-backend
-Repository navigation
-Code
-Issues
-Pull requests
-Cette API permet de gérer un blog avec des fonctionnalités CRUD complètes pour les articles. Chaque article contient un titre, un contenu, un auteur, une date, une catégorie et des tags.
-
- 0 stars
- 1 fork
- 0 watching
- 1 Branch
- 0 Tags
- Activity
-Public repository
-jesuis-karel/blog-api-backend
-Name	
-jesuis-karel
-jesuis-karel
-2 days ago
-config
-2 days ago
-controllers
-2 days ago
-middlewares
-2 days ago
-models
-2 days ago
-rapport
-2 days ago
-routes
-2 days ago
-.env
-2 days ago
-README.md
-2 days ago
-app.js
-2 days ago
-blog.db
-2 days ago
-Repository files navigation
-README
-API Backend Blog - TAF1 INF222 EC1
-API REST complète pour la gestion d'un blog développée dans le cadre du TAF1 - INF222 (Développement Backend : Programmation Web).
-
-Description
-Cette API permet de gérer un blog avec des fonctionnalités CRUD complètes pour les articles. Chaque article contient un titre, un contenu, un auteur, une date, une catégorie et des tags.
-
-Technologies Utilisées
-Node.js : Environnement d'exécution JavaScript
-Express : Framework web pour Node.js
-SQLite : Base de données relationnelle légère
-Swagger : Documentation interactive de l'API
-express-validator : Validation des données
-CORS : Gestion des requêtes cross-origin
-Prérequis
-Node.js (version 14 ou supérieure)
-npm (Node Package Manager)
-Installation
-1. Cloner le dépôt
-git clone <url-du-depot>
-cd blog-api-backend
-2. Installer les dépendances
-npm install
-3. Lancer l'application
-npm start
-Ou en mode développement avec rechargement automatique :
-
-npm run dev
-Le serveur démarre sur http://localhost:3000
-
-Structure du Projet
-blog-api-backend/
-├── config/
-│   ├── database.js          # Configuration de la base de données SQLite
-│   └── swagger.js            # Configuration de Swagger
-├── controllers/
-│   └── articleController.js  # Logique métier pour les articles
-├── models/
-│   └── Article.js            # Modèle de données Article
-├── routes/
-│   └── articles.js           # Définition des routes API
-├── middlewares/
-│   └── validators.js         # Validation des données
-├── app.js                    # Configuration de l'application Express
-├── server.js                 # Point d'entrée du serveur
-├── package.json              # Dépendances et scripts
-├── .gitignore                # Fichiers à ignorer par Git
-└── README.md                 # Documentation du projet
+ Documentation du projet
 Documentation API
 Une fois le serveur lancé, accédez à la documentation interactive Swagger :
 
